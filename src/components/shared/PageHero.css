@@ -11,8 +11,20 @@
 .page-hero__bg {
   position: absolute;
   inset: 0;
-  background: var(--gradient-hero);
+  background-image: url('../assets/palais-justice.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   z-index: 0;
+}
+
+.page-hero__bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-primary);
+  opacity: 0.85;
+  mix-blend-mode: multiply;
 }
 
 .page-hero__bg::after {

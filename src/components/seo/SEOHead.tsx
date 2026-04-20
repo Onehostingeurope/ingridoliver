@@ -34,15 +34,14 @@ export default function SEOHead({ title, description, canonical }: SEOHeadProps)
     }
     ogDesc.setAttribute('content', description)
 
-    if (canonical) {
-      let link = document.querySelector('link[rel="canonical"]')
-      if (!link) {
-        link = document.createElement('link')
-        link.setAttribute('rel', 'canonical')
-        document.head.appendChild(link)
-      }
-      link.setAttribute('href', canonical)
+    const currentUrl = canonical || `https://ingridoliver.com${window.location.pathname}`
+    let link = document.querySelector('link[rel="canonical"]')
+    if (!link) {
+      link = document.createElement('link')
+      link.setAttribute('rel', 'canonical')
+      document.head.appendChild(link)
     }
+    link.setAttribute('href', currentUrl)
   }, [title, description, canonical])
 
   return null

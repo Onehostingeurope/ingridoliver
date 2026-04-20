@@ -7,12 +7,12 @@ import portraitImg from '../assets/portrait_avocat2.jpg'
 import './LeCabinet.css'
 
 const values = [
-  { icon: <Heart size={20} />, label: 'Écoute', desc: "Chaque situation est unique. Avant toute analyse juridique, l'écoute attentive de votre histoire." },
-  { icon: <Eye size={20} />, label: 'Conscience', desc: "L'exercice du droit s'accompagne d'une responsabilité humaine et professionnelle constante." },
-  { icon: <Scale size={20} />, label: 'Indépendance', desc: "Un cabinet non intégré, libre de toute structure, au service exclusif de vos intérêts." },
-  { icon: <BookOpen size={20} />, label: 'Probité', desc: "La transparence sur vos droits, vos chances et les limites de la procédure — sans illusion." },
-  { icon: <UserCheck size={20} />, label: 'Humanité', desc: "Derrière chaque dossier se trouve une personne. Cette évidence guide chaque décision du cabinet." },
-  { icon: <Shield size={20} />, label: 'Discrétion', desc: "Le secret professionnel est absolu. Ce que vous confiez au cabinet reste strictement confidentiel." },
+  { icon: <Heart size={24} />, label: 'Écoute', desc: "Chaque situation est unique. Avant toute analyse juridique, l'écoute attentive de votre histoire." },
+  { icon: <Eye size={24} />, label: 'Conscience', desc: "L'exercice du droit s'accompagne d'une responsabilité humaine et professionnelle constante." },
+  { icon: <Scale size={24} />, label: 'Indépendance', desc: "Un cabinet non intégré, libre de toute structure, au service exclusif de vos intérêts." },
+  { icon: <BookOpen size={24} />, label: 'Probité', desc: "La transparence sur vos droits, vos chances et les limites de la procédure — sans illusion." },
+  { icon: <UserCheck size={24} />, label: 'Humanité', desc: "Derrière chaque dossier se trouve une personne. Cette évidence guide chaque décision du cabinet." },
+  { icon: <Shield size={24} />, label: 'Discrétion', desc: "Le secret professionnel est absolu. Ce que vous confiez au cabinet reste strictement confidentiel." },
 ]
 
 export default function LeCabinet() {

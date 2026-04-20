@@ -90,27 +90,65 @@
 .cabinet-valeurs__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-5);
+  gap: var(--space-6);
+  counter-reset: valeur-counter;
 }
 
 .valeur-item {
-  padding: var(--space-7) var(--space-6);
+  padding: var(--space-8) var(--space-6);
   background: var(--color-surface-lowest);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-ambient);
+  border: 1px solid rgba(var(--color-primary-rgb), 0.05);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
+  gap: var(--space-4);
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  overflow: hidden;
+}
+
+.valeur-item::before {
+  counter-increment: valeur-counter;
+  content: "0" counter(valeur-counter);
+  position: absolute;
+  top: var(--space-6);
+  right: var(--space-8);
+  font-family: var(--font-headline);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgba(var(--color-primary-rgb), 0.03);
+  line-height: 1;
+  pointer-events: none;
+  transition: color 0.4s ease;
+}
+
+.valeur-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(var(--color-primary-rgb), 0.08);
+  border-color: rgba(var(--color-tertiary-rgb), 0.2);
+}
+
+.valeur-item:hover::before {
+  color: rgba(var(--color-tertiary-rgb), 0.08);
 }
 
 .valeur-item__icon {
-  width: 44px;
-  height: 44px;
-  background: linear-gradient(135deg, rgba(255,184,112,0.15), rgba(255,184,112,0.05));
-  border-radius: var(--radius-sm);
+  width: 52px;
+  height: 52px;
+  background: radial-gradient(circle at center, rgba(255, 184, 112, 0.12), rgba(255, 184, 112, 0.04));
+  border: 1px solid rgba(255, 184, 112, 0.1);
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--color-tertiary);
+  transition: all 0.4s ease;
+}
+
+.valeur-item:hover .valeur-item__icon {
+  transform: scale(1.1) rotate(5deg);
+  background: radial-gradient(circle at center, rgba(255, 184, 112, 0.2), rgba(255, 184, 112, 0.08));
   color: var(--color-on-tertiary-ct);
 }
 
@@ -118,14 +156,16 @@
   font-family: var(--font-headline);
   font-size: var(--text-headline-sm);
   color: var(--color-primary);
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin-top: var(--space-1);
 }
 
 .valeur-item__desc {
   font-family: var(--font-body);
   font-size: var(--text-body-sm);
   color: var(--color-on-surface-var);
-  line-height: 1.65;
+  line-height: 1.7;
   max-width: none;
 }
 

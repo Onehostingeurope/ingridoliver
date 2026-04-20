@@ -162,6 +162,12 @@ export default function Accueil() {
             </div>
           </div>
         </div>
+        <div className="hero__scroll-indicator" aria-hidden="true">
+          <div className="hero__mouse">
+            <div className="hero__wheel"></div>
+          </div>
+          <span className="hero__scroll-text">Découvrir le cabinet</span>
+        </div>
       </section>
 
       {/* ── TRUST STRIP ── */}

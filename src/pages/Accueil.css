@@ -117,6 +117,59 @@
   object-position: top center;
 }
 
+/* Scroll Indicator */
+.hero__scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  z-index: 2;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.hero__scroll-indicator:hover {
+  opacity: 1;
+}
+
+.hero__mouse {
+  width: 24px;
+  height: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  position: relative;
+}
+
+.hero__wheel {
+  width: 2px;
+  height: 6px;
+  background: var(--color-tertiary-fixed-dim);
+  border-radius: 1px;
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scroll-wheel 2s infinite ease-in-out;
+}
+
+.hero__scroll-text {
+  font-family: var(--font-label);
+  font-size: var(--text-label-md);
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: var(--ls-widest);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@keyframes scroll-wheel {
+  0% { transform: translateX(-50%) translateY(0); opacity: 1; }
+  100% { transform: translateX(-50%) translateY(14px); opacity: 0; }
+}
+
 /* TRUST STRIP */
 .trust-strip {
   background: var(--color-surface-lowest);

@@ -287,8 +287,10 @@ p {
 
 /* ── Responsive helpers ────────────────────────────────── */
 @media (max-width: 768px) {
-  .section { padding: var(--space-16) 0; }
-  .section--lg { padding: var(--space-20) 0; }
+  .container, .container--wide { padding: 0 var(--space-4); }
+  .section { padding: var(--space-10) 0; }
+  .section--lg { padding: var(--space-12) 0; }
+  .section--sm { padding: var(--space-8) 0; }
   .hide-mobile { display: none !important; }
 }
 

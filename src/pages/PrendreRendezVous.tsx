@@ -41,6 +41,7 @@ export default function PrendreRendezVous() {
         },
         body: JSON.stringify({
           _subject: "Nouveau message depuis le site web - Ingrid Oliver Avocat",
+          _language: "fr",
           Prénom: data.prenom,
           Nom: data.nom,
           Email: data.email,

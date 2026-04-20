@@ -1,9 +1,9 @@
-﻿import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { ArrowRight, BookOpen, Scale, Heart, Eye, Shield, UserCheck } from 'lucide-react'
 import SEOHead from '../components/seo/SEOHead'
 import PageHero from '../components/shared/PageHero'
 import CTABlock from '../components/shared/CTABlock'
-import portraitImg from '../assets/portrait_avocat.png'
+import portraitImg from '../assets/portrait_avocat2.jpg'
 import './LeCabinet.css'
 
 const values = [

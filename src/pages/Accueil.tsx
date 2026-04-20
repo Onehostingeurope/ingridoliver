@@ -1,9 +1,9 @@
-﻿import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Phone, Mail, ArrowRight, Scale, Users, Briefcase, Shield, FileText, Building2, Activity, Award, Clock, MapPin, ChevronRight } from 'lucide-react'
 import SEOHead from '../components/seo/SEOHead'
 import CTABlock from '../components/shared/CTABlock'
 import FAQBlock from '../components/shared/FAQBlock'
-import portraitImg from '../assets/portrait_avocat.png'
+import portraitImg from '../assets/portrait_avocat2.jpg'
 import cabinetImg from '../assets/cabinet_interior.png'
 import './Accueil.css'
 

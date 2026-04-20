@@ -1,0 +1,194 @@
+/* Mediation page */
+.mediation-definition__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+.mediation-definition__grid h2 {
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.mediation-definition__grid p + p {
+  margin-top: var(--space-4);
+}
+
+.mediation-lead {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: var(--color-on-surface);
+  line-height: 1.75;
+  margin-bottom: var(--space-4);
+}
+
+.mediation-note {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  background: rgba(255, 184, 112, 0.1);
+  border-left: 3px solid var(--color-tertiary-fixed-dim);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: var(--space-4) var(--space-5);
+  margin-top: var(--space-6);
+}
+
+.mediation-note svg {
+  color: var(--color-on-tertiary-ct);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.mediation-note p {
+  font-size: var(--text-body-sm);
+  color: var(--color-on-surface);
+  line-height: 1.65;
+  max-width: none;
+}
+
+.mediation-distinction {
+  background: var(--color-primary);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8) var(--space-8);
+  color: rgba(255,255,255,0.8);
+}
+
+.mediation-distinction h3 {
+  color: var(--color-tertiary-fixed-dim);
+  font-size: var(--text-headline-sm);
+  margin-bottom: var(--space-5);
+}
+
+.mediation-distinction p {
+  font-size: var(--text-body-sm);
+  line-height: 1.7;
+  color: rgba(255,255,255,0.75);
+  max-width: none;
+  margin-bottom: var(--space-4);
+}
+
+.mediation-distinction strong {
+  color: rgba(255,255,255,0.95);
+  font-weight: 600;
+}
+
+.mediation-distinction em {
+  color: var(--color-tertiary-fixed-dim);
+  font-style: italic;
+}
+
+/* Avantages */
+.mediation-avantages__header {
+  max-width: 600px;
+  margin-bottom: var(--space-10);
+}
+
+.mediation-avantages__header p {
+  color: var(--color-on-surface-var);
+  margin-top: var(--space-3);
+}
+
+.mediation-avantages__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+}
+
+.mediation-avantage {
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+  padding: var(--space-6);
+  background: var(--color-surface-lowest);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-ambient);
+}
+
+.mediation-avantage__check {
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 184, 112, 0.12);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-on-tertiary-ct);
+  flex-shrink: 0;
+}
+
+.mediation-avantage__title {
+  font-family: var(--font-headline);
+  font-size: var(--text-headline-sm);
+  color: var(--color-primary);
+  font-weight: 500;
+  margin-bottom: var(--space-2);
+}
+
+.mediation-avantage__desc {
+  font-family: var(--font-body);
+  font-size: var(--text-body-sm);
+  color: var(--color-on-surface-var);
+  line-height: 1.65;
+  max-width: none;
+}
+
+/* Limites */
+.mediation-limites__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+.mediation-limites__inner h2 {
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.mediation-limites__inner p + p {
+  margin-top: var(--space-4);
+}
+
+.mediation-process h3 {
+  font-family: var(--font-headline);
+  font-size: var(--text-headline-sm);
+  color: var(--color-primary);
+  font-weight: 500;
+  margin-bottom: var(--space-5);
+}
+
+.mediation-steps-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.mediation-steps-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  font-family: var(--font-body);
+  font-size: var(--text-body-md);
+  color: var(--color-on-surface);
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.mediation-steps-list li span {
+  font-family: var(--font-headline);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--color-tertiary-fixed-dim);
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .mediation-definition__grid,
+  .mediation-avantages__grid,
+  .mediation-limites__inner {
+    grid-template-columns: 1fr;
+  }
+}

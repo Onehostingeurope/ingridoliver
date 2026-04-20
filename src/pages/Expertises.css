@@ -1,0 +1,94 @@
+/* Expertises overview */
+.expertises-overview__intro {
+  max-width: 800px;
+  margin-bottom: var(--space-12);
+}
+
+.expertises-overview__lead {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: var(--color-on-surface);
+  font-weight: 400;
+  max-width: none;
+}
+
+.expertises-overview__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+
+.expertise-overview-card {
+  display: flex;
+  gap: var(--space-6);
+  padding: var(--space-8);
+  background: var(--color-surface-lowest);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-ambient);
+  transition: box-shadow var(--duration-base) var(--ease-sovereign),
+              transform var(--duration-base) var(--ease-sovereign);
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.expertise-overview-card:hover {
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+
+.expertise-overview-card__icon {
+  width: 56px;
+  height: 56px;
+  background: var(--color-surface-low);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-on-tertiary-ct);
+  flex-shrink: 0;
+}
+
+.expertise-overview-card__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.expertise-overview-card__title {
+  font-family: var(--font-headline);
+  font-size: var(--text-headline-sm);
+  font-weight: 500;
+  color: var(--color-primary);
+  letter-spacing: var(--ls-tight);
+}
+
+.expertise-overview-card__desc {
+  font-family: var(--font-body);
+  font-size: var(--text-body-sm);
+  line-height: 1.65;
+  color: var(--color-on-surface-var);
+  max-width: none;
+}
+
+.expertise-overview-card__link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-label);
+  font-size: var(--text-label-md);
+  font-weight: 600;
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: var(--color-on-tertiary-ct);
+  margin-top: var(--space-2);
+}
+
+@media (max-width: 768px) {
+  .expertises-overview__grid {
+    grid-template-columns: 1fr;
+  }
+  .expertise-overview-card {
+    flex-direction: column;
+  }
+}

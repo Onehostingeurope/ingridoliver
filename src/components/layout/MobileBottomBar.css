@@ -1,0 +1,40 @@
+/* Mobile Bottom Bar */
+.mobile-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 990;
+  display: flex;
+  height: 64px;
+  box-shadow: 0 -4px 24px rgba(12, 20, 42, 0.12);
+}
+
+.mobile-bar__btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-label);
+  font-size: var(--text-label-lg);
+  font-weight: 600;
+  letter-spacing: var(--ls-wide);
+  transition: opacity var(--duration-fast) var(--ease-sovereign);
+  cursor: pointer;
+}
+
+.mobile-bar__btn:active {
+  opacity: 0.85;
+}
+
+.mobile-bar__btn--call {
+  background: var(--color-surface-lowest);
+  color: var(--color-primary);
+  border-right: 1px solid var(--glass-border);
+}
+
+.mobile-bar__btn--rdv {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}

@@ -1,0 +1,120 @@
+/* Shared expertise page styles */
+.expertise-intro__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+.expertise-intro__grid h2 {
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.expertise-lead {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: var(--color-on-surface);
+  line-height: 1.75;
+  margin-bottom: var(--space-4);
+}
+
+.expertise-situations {
+  background: var(--color-surface-low);
+  border-radius: var(--radius-md);
+  padding: var(--space-8);
+}
+
+.expertise-situations h3 {
+  font-family: var(--font-label);
+  font-size: var(--text-label-md);
+  font-weight: 600;
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+  color: var(--color-on-tertiary-ct);
+  margin-bottom: var(--space-5);
+}
+
+.expertise-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  list-style: none;
+  padding: 0;
+}
+
+.expertise-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  font-family: var(--font-body);
+  font-size: var(--text-body-md);
+  color: var(--color-on-surface);
+  line-height: 1.5;
+}
+
+.expertise-list li::before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: var(--color-tertiary-fixed-dim);
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+  margin-top: 8px;
+}
+
+.expertise-approach__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-10);
+  margin-top: var(--space-8);
+}
+
+.expertise-approach__grid h3 {
+  font-family: var(--font-headline);
+  font-size: var(--text-headline-sm);
+  color: var(--color-primary);
+  font-weight: 500;
+  margin-bottom: var(--space-4);
+}
+
+.expertise-approach__grid p + p {
+  margin-top: var(--space-4);
+}
+
+.expertise-approach h2 {
+  margin-top: var(--space-3);
+}
+
+.expertise-faq__inner {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+.expertise-faq__inner h2 {
+  margin-top: var(--space-3);
+}
+
+/* Nav bar between expertises */
+.expertise-nav-bar {
+  background: var(--color-surface-high);
+  padding: var(--space-5) 0;
+}
+
+.expertise-nav-bar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+@media (max-width: 768px) {
+  .expertise-intro__grid,
+  .expertise-approach__grid,
+  .expertise-faq__inner {
+    grid-template-columns: 1fr;
+  }
+}

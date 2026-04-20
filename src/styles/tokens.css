@@ -1,0 +1,124 @@
+/* =========================================================
+   DESIGN TOKENS — Cabinet Ingrid Oliver Avocat
+   Extracted from Stitch "The Sovereign Editorial" design system
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400;1,6..72,500&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  /* ── Color Palette ─────────────────────────────────────── */
+  --color-primary:           #0c142a;
+  --color-primary-container: #212940;
+  --color-surface:           #f6faff;
+  --color-surface-bright:    #f6faff;
+  --color-surface-low:       #ebf5ff;
+  --color-surface-high:      #ddeaf5;
+  --color-surface-highest:   #d8e4ef;
+  --color-surface-dim:       #cfdce7;
+  --color-surface-lowest:    #ffffff;
+
+  --color-on-primary:        #ffffff;
+  --color-on-surface:        #111d25;
+  --color-on-surface-var:    #45464d;
+
+  --color-secondary:         #575e74;
+  --color-secondary-container: #d8dffa;
+  --color-on-secondary:      #ffffff;
+  --color-on-secondary-ct:   #5b6279;
+
+  /* Bronze/Gold accents */
+  --color-tertiary:          #241100;
+  --color-tertiary-container:#412300;
+  --color-tertiary-fixed:    #ffdcbe;
+  --color-tertiary-fixed-dim:#ffb870;
+  --color-on-tertiary-ct:    #d27c00;
+
+  --color-outline:           #76767e;
+  --color-outline-var:       #c6c6ce;
+  --color-error:             #ba1a1a;
+
+  /* ── Typography ────────────────────────────────────────── */
+  --font-headline: 'Newsreader', Georgia, serif;
+  --font-body:     'Work Sans', system-ui, sans-serif;
+  --font-label:    'Inter', system-ui, sans-serif;
+
+  /* Type Scale */
+  --text-display-lg:  clamp(2.75rem, 5vw, 4.5rem);
+  --text-display-md:  clamp(2.25rem, 4vw, 3.5rem);
+  --text-display-sm:  clamp(1.875rem, 3vw, 2.75rem);
+  --text-headline-lg: clamp(1.625rem, 2.5vw, 2.25rem);
+  --text-headline-md: clamp(1.375rem, 2vw, 1.75rem);
+  --text-headline-sm: clamp(1.125rem, 1.5vw, 1.375rem);
+  --text-title-lg:    1.25rem;
+  --text-title-md:    1.0625rem;
+  --text-title-sm:    0.9375rem;
+  --text-body-lg:     1.0625rem;
+  --text-body-md:     0.9375rem;
+  --text-body-sm:     0.875rem;
+  --text-label-lg:    0.875rem;
+  --text-label-md:    0.75rem;
+  --text-label-sm:    0.6875rem;
+
+  /* Line Heights */
+  --lh-display:   1.1;
+  --lh-headline:  1.25;
+  --lh-body:      1.7;
+  --lh-title:     1.4;
+
+  /* Letter Spacing */
+  --ls-tight:     -0.025em;
+  --ls-normal:    0;
+  --ls-wide:      0.05em;
+  --ls-wider:     0.1em;
+
+  /* ── Spacing Scale ─────────────────────────────────────── */
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:   12px;
+  --space-4:   16px;
+  --space-5:   20px;
+  --space-6:   24px;
+  --space-8:   32px;
+  --space-10:  40px;
+  --space-12:  48px;
+  --space-16:  64px;
+  --space-20:  80px;
+  --space-24:  96px;
+  --space-32: 128px;
+  --space-40: 160px;
+
+  /* ── Radius ────────────────────────────────────────────── */
+  --radius-sm:  0.25rem;
+  --radius-md:  0.5rem;
+  --radius-lg:  1rem;
+  --radius-xl:  1.5rem;
+  --radius-full: 9999px;
+
+  /* ── Shadows ───────────────────────────────────────────── */
+  --shadow-ambient: 0px 24px 48px rgba(17, 29, 37, 0.06);
+  --shadow-card:    0px 8px 24px rgba(17, 29, 37, 0.08);
+  --shadow-float:   0px 16px 40px rgba(17, 29, 37, 0.12);
+  --shadow-strong:  0px 32px 64px rgba(17, 29, 37, 0.16);
+
+  /* ── Transitions ───────────────────────────────────────── */
+  --ease-sovereign: cubic-bezier(0.2, 0, 0, 1);
+  --duration-fast:  200ms;
+  --duration-base:  350ms;
+  --duration-slow:  600ms;
+
+  /* ── Glass effect ──────────────────────────────────────── */
+  --glass-bg:     rgba(246, 250, 255, 0.85);
+  --glass-blur:   20px;
+  --glass-border: rgba(198, 198, 206, 0.15);
+
+  /* ── Layout ────────────────────────────────────────────── */
+  --max-width:      1280px;
+  --max-width-text: 720px;
+  --max-width-wide: 1440px;
+  --nav-height:     76px;
+
+  /* ── Gold gradient ─────────────────────────────────────── */
+  --gradient-hero:   linear-gradient(135deg, #0c142a 0%, #212940 60%, #1a1e30 100%);
+  --gradient-gold:   linear-gradient(135deg, #d27c00 0%, #ffb870 100%);
+  --gradient-subtle: linear-gradient(135deg, #f6faff 0%, #ebf5ff 100%);
+}

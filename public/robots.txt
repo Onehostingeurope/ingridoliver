@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ingridoliver.com/sitemap.xml
+
+# Cabinet Ingrid Oliver-D'Ollonne — Avocate au Barreau de Grasse

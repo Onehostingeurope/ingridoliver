@@ -11,7 +11,7 @@
 .page-hero__bg {
   position: absolute;
   inset: 0;
-  background-image: url('../assets/palais-justice.jpg');
+  background-image: url('../../assets/palais-justice.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
